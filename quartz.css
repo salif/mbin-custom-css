@@ -3,5 +3,109 @@
 * https://github.com/salif/mbin-custom-css
 */
 :root body {
-    --kbin-body-font-family: Ubuntu,-apple-system,BlinkMacSystemFont,sans-serif;
+    --kbin-body-font-family: Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif;
+    --kbin-body-font-size: 1rem;
+    --kbin-body-font-weight: 400;
+    --kbin-body-line-height: 1.5;
+    --kbin-body-text-align: left;
+    --kbin-body-bg: rgb(220, 48, 124);
+    --kbin-bg: linear-gradient(90deg, rgb(220, 48, 124), rgb(94, 98, 176), rgb(51, 183, 226));
+    --kbin-bg-nth: var(--kbin-body-bg);
+    --kbin-text-color: rgb(255, 255, 255);
+    --kbin-link-color: rgb(255, 255, 255);
+    --kbin-link-hover-color: rgb(235, 235, 235);
+    --kbin-outline: var(--kbin-body-bg) solid 4px;
+    --kbin-primary-color: #363649;
+    --kbin-text-muted-color: var(--kbin-link-hover-color);
+    --kbin-success-color: rgb(65, 215, 167);
+    --kbin-danger-color: rgb(253, 126, 20);
+    --kbin-own-color: var(--kbin-success-color);
+    --kbin-author-color: var(--kbin-danger-color);
+    --kbin-section-bg: rgba(200, 200, 200, 0.2);
+    --kbin-section-text-color: var(--kbin-text-color);
+    --kbin-section-title-link-color: var(--kbin-link-color);
+    --kbin-section-link-color: var(--kbin-link-color);
+    --kbin-section-link-hover-color: var(--kbin-link-hover-color);
+    --kbin-section-border: 1px solid var(--kbin-text-color);
+    --kbin-author-border: 1px dashed var(--kbin-author-color);
+    --kbin-own-border: 1px dashed var(--kbin-own-color);
+    --kbin-meta-bg: none;
+    --kbin-meta-text-color: var(--kbin-text-color);
+    --kbin-meta-link-color: var(--kbin-link-color);
+    --kbin-meta-link-hover-color: var(--kbin-link-hover-color);
+    --kbin-meta-border: 1px dashed var(--kbin-text-color);
+    --kbin-avatar-border: 3px solid var(--kbin-text-color);
+    --kbin-avatar-border-active: 3px solid var(--kbin-link-hover-color);
+    --kbin-blockquote-color: var(--kbin-success-color);
+    --kbin-options-bg: var(--kbin-section-bg);
+    --kbin-options-text-color: var(--kbin-text-color);
+    --kbin-options-link-color: var(--kbin-link-color);
+    --kbin-options-link-hover-color: var(--kbin-link-hover-color);
+    --kbin-options-border: 1px solid var(--kbin-text-color);
+    --kbin-options-link-hover-border: 3px solid var(--kbin-link-hover-color);
+    --kbin-input-bg: var(--kbin-section-bg);
+    --kbin-input-text-color: var(--kbin-text-color);
+    --kbin-input-border: 1px solid var(--kbin-text-color);
+    --kbin-input-placeholder-text-color: var(--kbin-link-hover-color);
+    --kbin-button-primary-bg: rgb(232, 50, 131);
+    --kbin-button-primary-hover-bg: rgb(186, 40, 105);
+    --kbin-button-primary-text-color: var(--kbin-text-color);
+    --kbin-button-primary-text-hover-color: var(--kbin-link-hover-color);
+    --kbin-button-primary-border: 1px solid transparent;
+    --kbin-button-secondary-bg: rgb(51, 183, 226);
+    --kbin-button-secondary-hover-bg: rgb(94, 98, 176);
+    --kbin-button-secondary-text-color: var(--kbin-link-color);
+    --kbin-button-secondary-text-hover-color: var(--kbin-link-hover-color);
+    --kbin-button-secondary-border: 1px solid var(--kbin-text-color);
+    --kbin-header-bg: var(--kbin-section-bg);
+    --kbin-header-text-color: var(--kbin-text-color);
+    --kbin-header-link-color: var(--kbin-link-color);
+    --kbin-header-link-hover-color: var(--kbin-link-hover-color);
+    --kbin-header-link-active-bg: var(--kbin-options-bg);
+    --kbin-header-border: 1px solid var(--kbin-text-color);
+    --kbin-header-hover-border: 3px solid var(--kbin-link-hover-color);
+    --kbin-topbar-bg: var(--kbin-section-bg);
+    --kbin-topbar-active-bg: var(--kbin-options-bg);
+    --kbin-topbar-active-link-color: var(--kbin-text-color);
+    --kbin-topbar-hover-bg: rgb(94, 98, 176);
+    --kbin-topbar-border: 1px solid var(--kbin-text-color);
+    --kbin-sidebar-header-text-color: var(--kbin-text-color);
+    --kbin-sidebar-header-border: 1px solid var(--kbin-text-color);
+    --kbin-sidebar-settings-row-bg: var(--kbin-section-bg);
+    --kbin-sidebar-settings-switch-on-color: var(--kbin-text-color);
+    --kbin-sidebar-settings-switch-on-bg: var(--kbin-button-primary-bg);
+    --kbin-sidebar-settings-switch-off-color: var(--kbin-text-color);
+    --kbin-sidebar-settings-switch-off-bg: var(--kbin-section-bg);
+    --kbin-sidebar-settings-switch-hover-bg: var(--kbin-link-hover-color);
+    --kbin-vote-bg: var(--kbin-section-bg);
+    --kbin-vote-text-color: var(--kbin-text-color);
+    --kbin-vote-text-hover-color: var(--kbin-link-hover-color);
+    --kbin-upvoted-color: var(--kbin-success-color);
+    --kbin-downvoted-color: var(--kbin-danger-color);
+    --kbin-boosted-color: var(--kbin-upvoted-color);
+    --kbin-alert-info-bg: var(--kbin-text-color);
+    --kbin-alert-info-border: 1px solid rgb(57, 203, 251);
+    --kbin-alert-info-text-color: rgb(57, 203, 251);
+    --kbin-alert-info-link-color: rgb(48, 173, 213);
+    --kbin-alert-danger-bg: var(--kbin-text-color);
+    --kbin-alert-danger-border: 1px solid var(--kbin-alert-danger-text-color);
+    --kbin-alert-danger-text-color: var(--kbin-danger-color);
+    --kbin-alert-danger-link-color: var(--kbin-danger-color);
+    --kbin-entry-link-visited-color: var(--kbin-link-hover-color);
+    --kbin-footer-bg: var(--kbin-section-bg);
+    --kbin-footer-text-color: var(--kbin-text-color);
+    --kbin-footer-link-color: var(--kbin-link-color);
+    --kbin-footer-link-hover-color: var(--kbin-link-hover-color);
+}
+
+.dropdown__menu {
+    background-color: rgb(51, 183, 226);
+}
+
+.params .ts-wrapper .ts-dropdown.single {
+    background-color: var(--kbin-body-bg) !important;
+}
+
+.popover--is-visible {
+    background-color: var(--kbin-body-bg);
 }
